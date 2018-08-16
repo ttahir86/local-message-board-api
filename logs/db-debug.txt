@@ -12,3 +12,5 @@
 1534386498 : Error - Line 124 in File C:\xampp\htdocs\local-message-board-api\my-libraries\db\db.php SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
 1534387095 : INSERT INTO Boards (title,latitude,longitude,createDate,updateDate,numberOfMessages) VALUES ('Test Title', '-75.0903296', '40.0744448', 'NOW()', 'NOW()', '0')
 1534388353 : INSERT INTO Boards (title,latitude,longitude,createDate,updateDate,numberOfMessages) VALUES ('Test Title', '40.0744448', '-75.0903296', 'NOW()', 'NOW()', '0')
+1534388846 : INSERT INTO Boards (title,latitude,longitude,createDate,updateDate,numberOfMessages) VALUES ('Test Title', '40.0744448', '-75.0903296', 'NOW()', 'NOW()', '0')
+1534389720 : Error - Line 124 in File C:\xampp\htdocs\local-message-board-api\my-libraries\db\db.php SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION localmessageboards.longitude does not exist

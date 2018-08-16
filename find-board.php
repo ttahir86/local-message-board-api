@@ -12,6 +12,7 @@
         $radius = $request->radius;
         $title  = $request->title;
         $message = $request->message;
+        $maxDistance = $request->maxDistance;
 
         if ($lat != "") {
             $db = new DBConnect();
@@ -27,7 +28,7 @@
 
             );
             $sql = "SELECT
-            MessageBoardId,Title, (
+            MessageBoardId,Title,latitude,longitude, (
               3959 * acos (
                 cos ( radians($lat) )
                 * cos( radians( latitude ) )
@@ -37,7 +38,7 @@
               )
             ) AS distance
           FROM Boards
-          HAVING distance < 5
+          HAVING distance <$maxDistance
           ORDER BY distance
           LIMIT 0 , 20;";
 
