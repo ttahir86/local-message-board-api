@@ -18,9 +18,9 @@ class DBSettings{
     private const settings = array
     (
         "host"=>"localhost", 
-        "database"=>"localmessageboards", 
+        "database"=>"test", 
         "username"=>"root", 
-        "password"=>"1234"
+        "password"=>"root"
     );
 
 
